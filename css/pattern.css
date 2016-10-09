@@ -1,0 +1,32 @@
+@media screen and (max-width:630px) {
+    #menu {
+        height: 50px;
+        width: 50px;
+        padding: 5px;
+        border-radius: 5px;
+        line-height: 50px;
+        text-align: center;
+        background: #000;
+        opacity: 0.8;
+        color: #fff;
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 10;
+    }
+
+    .serchContainer {
+        position: absolute;
+        top: -999px;
+        left: -999px;
+    };
+}
+
+@media screen and (min-width:631px) {
+    #menu {
+        position: absolute;
+        top: 0;
+        left: -999px;
+    };
+}
