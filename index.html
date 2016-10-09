@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Bangaluru Neighborhood Map</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/pattern.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="menu">|||</div>
+    <div class="serchContainer">
+        <div class="cut">X</div>
+        <div id="search">
+            <input id="search-box" data-bind="textInput: searchList, valueUpdate: 'afterkeydown'" placeholder="Search..." />
+        </div>
+        <div id="app">
+            <div id="list">
+                <ul id="results" data-bind="foreach: filteredData">
+                    <li id="place" data-bind="text: title, click: bounce"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="map">Error. Please Try Again.</div>
+
+    <script src='js/knockout-3.4.0.js'></script>
+    <script src='js/jquery-1.12.0.min.js'></script>
+    <script src='js/app.js'></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJNeD7D23CIB81RjON_oTTyLDCo6HEics&v=3&callback=initMap&libraries=places" onerror="error()"></script>
+</body>
+
+</html>
