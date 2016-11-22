@@ -1,4 +1,4 @@
-# Bangaluru Neighborhood Map Project
+# Bengaluru Neighborhood Map Project
 
 -------------------------------------------------------------------
 ## Basic Description
